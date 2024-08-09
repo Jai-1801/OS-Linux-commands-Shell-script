@@ -194,7 +194,7 @@ hello world
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 ```
-2
+3
 ```
 
 
@@ -203,17 +203,6 @@ grep -w -n world newfile
 ```
 1:Hello world
 2:hello world
-```
-
-
-cat < newfile 
-```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
-^d
 ```
 
 cat > newfile
@@ -225,6 +214,17 @@ Unix is predecessor
 Linux is best in this World
 ^d
  ```
+
+cat < newfile 
+```
+Hello world
+hello world
+Linux is world number 1
+Unix is predecessor
+Linux is best in this World
+^d
+```
+
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 ```
